@@ -68,7 +68,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * power-up.
  *
  */
-//#define FORCE_NKRO
+#define FORCE_NKRO
 
 /*
  * Magic Key Options
@@ -100,7 +100,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_BACKLIGHT_DISABLE_WHEN_USB_SUSPENDED 0
 
 // disable backlight after timeout in minutes, 0 = no timeout
-#define RGB_BACKLIGHT_DISABLE_AFTER_TIMEOUT 0
+#define RGB_BACKLIGHT_DISABLE_AFTER_TIMEOUT 2
 
 // the default brightness
 #define RGB_BACKLIGHT_BRIGHTNESS 255
@@ -112,8 +112,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_BACKLIGHT_EFFECT_SPEED 0
 
 // the default color1 and color2
-#define RGB_BACKLIGHT_COLOR_1 { .h = 0, .s = 255 }
-#define RGB_BACKLIGHT_COLOR_2 { .h = 127, .s = 255 }
+#define RGB_BACKLIGHT_COLOR_1 { .h = 90, .s = 100 }
+#define RGB_BACKLIGHT_COLOR_2 { .h = 20, .s = 255 }
 
 #define DRIVER_COUNT 2
 #define DRIVER_LED_TOTAL 64
@@ -130,8 +130,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_BACKLIGHT_ALPHAS_MODS_ROW_4 0b0011110000000111
 
 #define RGB_BACKLIGHT_CAPS_LOCK_INDICATOR { .color = { .h = 0, .s = 0 }, .index = 255 }
-#define RGB_BACKLIGHT_LAYER_1_INDICATOR { .color = { .h = 0, .s = 0 }, .index = 255 }
-#define RGB_BACKLIGHT_LAYER_2_INDICATOR { .color = { .h = 0, .s = 0 }, .index = 255 }
+#define RGB_BACKLIGHT_LAYER_1_INDICATOR { .color = { .h = 70, .s = 100 }, .index = 255 }
+#define RGB_BACKLIGHT_LAYER_2_INDICATOR { .color = { .h = 180, .s = 100 }, .index = 255 }
 #define RGB_BACKLIGHT_LAYER_3_INDICATOR { .color = { .h = 0, .s = 0 }, .index = 255 }
 
 // TODO: refactor with new user EEPROM code (coming soon)
